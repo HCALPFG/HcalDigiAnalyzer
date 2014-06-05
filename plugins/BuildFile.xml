@@ -1,0 +1,12 @@
+<library   file="*.cc" name="HcalDigiAnalyzer_Plugins">
+  <use   name="FWCore/Framework"/>
+  <use   name="FWCore/PluginManager"/>
+  <use   name="FWCore/ParameterSet"/>
+  <use   name="DataFormats/HcalDigi"/>
+  <use   name="DataFormats/FEDRawData"/>
+  <use   name="CalibFormats/HcalObjects"/>
+  <use   name="CalibCalorimetry/HcalTPGAlgos"/>
+  <use   name="HCALPFG/HcalDigiAnalyzer"/>
+  <use   name="boost"/>
+  <flags EDM_PLUGIN="1"/>
+</library>
