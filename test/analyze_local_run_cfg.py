@@ -53,7 +53,7 @@ from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'GR_P_V43D::All', '')
 
 #------------------------------------------------------------------------------------
-# Hcal DQM Source, including HitReconstrctor
+# Python configuration files
 #------------------------------------------------------------------------------------
 
 process.load("Geometry.HcalEventSetup.HcalTopology_cfi")
@@ -74,7 +74,6 @@ process.tbunpack = cms.EDProducer("HcalTBObjectUnpacker",
     HcalTriggerFED          = cms.untracked.int32(1),
     fedRawDataCollectionTag = cms.InputTag('source')
 )
-
 
 #------------------------------------------------------------------------------------
 # Define source for HCAL digis
