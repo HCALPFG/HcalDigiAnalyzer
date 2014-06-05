@@ -103,12 +103,5 @@ process.p = cms.Path(process.tbunpack
                      *process.analysis
 )
 
-process.dump_module = cms.OutputModule("PoolOutputModule",
-    outputCommands = cms.untracked.vstring('keep *'),
-    fileName       = cms.untracked.string ('dump.root')
-)
-
-process.dump = cms.EndPath (process.dump_module )
-
-process.schedule = cms.Schedule(process.p,process.dump)
+process.schedule = cms.Schedule(process.p)
 
