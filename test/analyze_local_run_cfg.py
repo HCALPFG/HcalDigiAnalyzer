@@ -80,6 +80,7 @@ process.tbunpack = cms.EDProducer("HcalTBObjectUnpacker",
 #------------------------------------------------------------------------------------
 
 process.hcalDigis.InputLabel = cms.InputTag("source")
+process.hcalDigis.FilterDataQuality = cms.bool (False) 
 
 #------------------------------------------------------------------------------------
 # Define analyzer
